@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style-contactanos.css">
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    
+</head>
+<body>
+    
+<header class="encabezado-1">
+    <div class="menu contenido">
+        <a href="inicio.html" class="logo"> <img src="imagenes de inicio/Black_and_Grey__Y2K_Shodwe_Fashion_Logo-removebg-preview - copia.png" alt=""></a>
+        <input type="caja" id="menu"/>
+        <label for="menu">
+        <img src="imagenes de inicio/menu.png" class="menu-icono" alt="">
+        
+         </label>
+       
+        <nav class="encabezado">
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="Ferretería.html">Ferretería</a></li>
+                <li><a href="Electrónica.html">Electrónica</a></li>
+                <li><a href="Contactanos.html">Contactanos</a></li>
+
+            </ul>
+
+        </nav>
+        <div>
+            <ul>
+                <li class="submenu">
+                    <img src="imagenes de inicio/car.svg" id="img-carrito" alt="carrito">
+                    <div id="carrito">
+                        <table id="lista-carrito">
+                            
+                            <thead>
+
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th></th>
+
+
+                                </tr>
+
+
+                            </thead>
+                            
+                           <tbody></tbody>
+                           
+                        </table>
+
+                        <div class="pie-total">
+                    
+                        <div id="total-pie">
+                            <span>Total:</span>
+                            <span id="total-precio">Q 0.00</span>
+                            
+                           
+                        
+                        </div>
+                        
+
+                        </div>
+                        
+                        
+
+                    
+
+                    </div>
+
+
+
+                </li>
+
+
+            </ul>
+
+
+        </div>
+        
+    </div>
+
+
+
+
+    <div class="encabezado-contenido contenido">
+        <div class="contacto_formulario">
+
+            <div class="formulario">      
+              <h1>Contactanos</h1>
+                <h3>Escríbenos y en breve nos pondremos en contacto contigo</h3>
+        
+        
+                <form action="https://formspree.io/f/xjkbqwlq" method="POST">
+                  <p>
+                    <label for="nombre" class="colocar_nombre">Nombre
+                      <span class="obligatorio">*</span>
+                    </label>
+                    <input type="text" name="nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                  </p>
+                
+                  <p>
+                    <label for="email" class="colocar_email">Email
+                      <span class="obligatorio">*</span>
+                    </label>
+                    <input type="email" name="email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                  </p>
+                
+                  <p>
+                    <label for="telefono" class="colocar_telefono">Teléfono
+                    </label>
+                    <input type="tel" name="telefono" id="telefono" placeholder="Escribe tu teléfono">
+                  </p>
+                
+                  <p>
+                    <label for="mensaje" class="colocar_mensaje">Mensaje
+                      <span class="obligatorio">*</span>
+                    </label>
+                    <textarea name="mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
+                  </p>
+                
+                  <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+                
+                  <p class="aviso">
+                    <span class="obligatorio"> * </span> Siguenos Nuestras Redes Sociales.
+                  </p>
+                
+                  <div class="social-icons">
+                    <a href="https://wa.me/1234567890"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61565920582657"><i class='bx bxl-facebook-circle' ></i></a>
+                    <a href="https://www.instagram.com/handymannyferreteria/"><i class='bx bxl-instagram'></i></a>
+                  </div>
+                </form>
+                
+<script src="script-contactanos.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comprar</title>
+    <link rel="stylesheet" href="style-compras.css">
+    
+</head>
+<body>
+    
+<header class="encabezado-1">
+    <div class="menu contenido">
+        <a href="inicio.html" class="logo"> <img src="imagenes de inicio/Black_and_Grey__Y2K_Shodwe_Fashion_Logo-removebg-preview - copia.png" alt=""></a>
+        <input type="caja" id="menu"/>
+        <label for="menu">
+        <img src="imagenes de inicio/menu.png" class="menu-icono" alt="">
+        
+         </label>
+       
+        <nav class="encabezado">
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="Ferretería.html">Ferretería</a></li>
+                <li><a href="Electrónica.html">Electrónica</a></li>
+                <li><a href="Contactanos.html">Contactanos</a></li>
+
+            </ul>
+
+        </nav>
+        <div>
+            <ul>
+                <li class="submenu">
+                    <img src="imagenes de inicio/car.svg" id="img-carrito" alt="carrito">
+                    <div id="carrito">
+                        <table id="lista-carrito">
+                            <thead>
+
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th></th>
+
+
+                                </tr>
+
+
+                            </thead>
+                           <tbody></tbody>
+
+                        </table>
+                        <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+
+
+
+                    </div>
+
+
+
+                </li>
+
+
+            </ul>
+
+
+        </div>
+        
+    </div>
+
+
+
+    <div class="encabezado-contenido contenido">
+        <!-- Formulario de Compra -->
+<div id="formulario-compra" class="formulario-compra">
+    <h2>Sección de compra</h2>
+    <form id="compra-form">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+            
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Forma de Pago</legend>
+            <div>
+                <input type="radio" id="tarjeta" name="pago" value="tarjeta" required>
+                <label for="tarjeta">Tarjeta de Crédito</label>
+                <div id="datos-tarjeta" class="datos-tarjeta" style="display: none;">
+                    <label for="num-tarjeta">Número de Tarjeta:</label>
+                    <input type="text" id="num-tarjeta" name="num-tarjeta" placeholder="1234 5678 9012 3456" maxlength="19" required>
+                    
+                    <label for="cvc">CVC:</label>
+                    <input type="text" id="cvc" name="cvc" placeholder="123" maxlength="3" required>
+                    
+                    <label for="fecha-expiracion">Fecha de Expiración:</label>
+                    <input type="text" id="fecha-expiracion" name="fecha-expiracion" placeholder="MM/AA" maxlength="5" required>
+                </div>
+            </div>
+            <div>
+                <input type="radio" id="efectivo" name="pago" value="efectivo" required>
+                <label for="efectivo">Efectivo</label>
+            </div>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Opciones de Entrega</legend>
+            <div>
+                <input type="radio" id="entrega" name="entrega" value="entrega" required>
+                <label for="entrega">HandyManny Express</label>
+            </div>
+            <div>
+                <input type="radio" id="retirar" name="entrega" value="retirar" required>
+                <label for="retirar">Retirar en Local</label>
+            </div>
+        </fieldset>
+        
+        <button type="submit" class="btn-2">Confirmar Compra</button>
+    </form>
+    <div id="mensaje-confirmacion" class="mensaje-confirmacion" style="display: none;">
+        <h3>Gracias por tu compra</h3>
+        <img src="imagenes de inicio/Black_and_Grey__Y2K_Shodwe_Fashion_Logo-removebg-preview - copia.png" alt="">
+    </div>
+</div>
+    
+    </div>
+
+
+</header>
+<footer class="pie">
+        
+    <div class="contenido-2"></div>
+    <div class="pie-row">
+
+    <div class="pie-links">
+
+        <h4>Handy Manny Ferretería</h4>
+        <ul>
+
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Politica de privacidad</a></li>
+            <li><a href="#">Noticias</a></li>
+            
+        </ul>
+    </div>
+
+    <div class="pie-links">
+
+        <h4>Ayuda</h4>
+        <ul>
+
+            <li><a href="#">Preguntas</a></li>
+            <li><a href="#">Fallas en el sitio web</a></li>
+            <li><a href="#">Compras</a></li>
+            
+        </ul>
+    </div>
+
+    <div class="pie-links">
+
+        <h4>Productos</h4>
+        <ul>
+
+            <li><a href="Ferretería.html">Ferretería</a></li>
+            <li><a href="Electrónica.html">Electrónica </a></li>
+            
+            
+        </ul>
+    </div>
+
+    <div class="pie-links">
+
+        <h4>Siguenos</h4>
+        <ul>
+
+            <li><a href="https://www.facebook.com/profile.php?id=61565920582657">Facebook</a></li>
+            <li><a href="https://www.instagram.com/handymannyferreteria/">Instagram</a></li>
+            <li><a href="https://wa.me/1234567890">WhatsApp</a></li>
+            
+        </ul>
+    </div>
+    </div>
+
+    <div class="pie-copyrights">
+        <h1>&copy; 2024 HandyMannyFerretería. Todos los derechos reservados.</h1>
+
+    </div>
+
+</footer>
+        
+          
+    <script src="script-compras.js"></script>
+</body>
+</html>

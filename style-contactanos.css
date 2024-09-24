@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap');
+
+/*
+font-family: "Josefin Sans", sans-serif;
+font-family: "Anton", system-ui;
+font-family: "Roboto Slab", system-ui;
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: "Roboto Slab", system-ui;
+    background-color: #fff1bb;
+}
+.logo img{
+
+    max-width: 200px;
+    height: auto;
+    margin-left: 1px;
+    
+}
+
+img{
+    max-width: 100%;
+  
+
+}
+
+.contenido{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.encabezado-1{
+    background-color: #ffde59;
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+    padding: 100px 0;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+.menu .encabezado ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .encabezado ul li a{
+    font-size: 25px;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    display: block;
+    font-weight: 600;
+    border-radius: 5%;
+    font-family: "Josefin Sans", sans-serif;
+    background-color: #ff0000;
+    justify-content: space-between;
+    position: relative;
+    float: left;
+   
+    
+    
+
+}
+.menu .encabezado ul li a:hover{
+    -moz-transform:rotate(-5deg);
+     -moz-box-shadow:10px 10px 20px #f5f5f5;
+    -webkit-transform: rotate(-5deg);
+   -webkit-box-shadow:10px 10px 20px#5b2206; 
+     box-shadow: 20px 10px 20px #5b2206;
+   margin-left: 10px;
+}
+
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+
+}
+
+.submenu{
+    position: relative;
+
+}
+
+.submenu #carrito{
+    display: none;
+
+}
+
+
+
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: #fff1bb;
+    padding: 20px;
+    min-width: 400px;
+
+}
+
+table{
+    width: 100%;
+}
+
+th, td{
+    color: #000000;
+    font-size: 20px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+
+
+.borrar{
+    background-color: #ffde59;
+    border-radius: 50px;
+    padding: 5px 10px;
+    color: black;
+    font-weight: 800;
+    cursor: pointer;
+
+}
+
+.pie-total{
+   font-size: 20px;
+   font-family: "Josefin Sans", sans-serif;
+
+}
+
+
+.encabezado-contenido{
+    display: flex;
+    margin-left: 500px;
+    margin-top: 50px;
+   
+
+}
+
+.contacto_formulario{  
+    width: 460px; 
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;  
+    padding-top: 30px;
+    padding-bottom: 20px;  
+    background-color: #ffe786; 
+    padding-left: 30px; 
+  }
+  
+  
+  input{
+    background-color: #fff; 
+    width: 408px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #fff; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+  }
+  
+  
+  textarea{
+    background-color: #fbfbfb; 
+    width: 405px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #000000; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+  }
+  
+  
+  label{
+    display: block; 
+    float: center;  
+  }
+  
+  
+  button{
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 20px; 
+    margin-top: 10px;   
+    text-transform: uppercase;
+    background-color: #5b2206; 
+    border-color: #5b2206; 
+    border-style: solid; 
+    border-radius: 10px;  
+    width: 420px;   
+    cursor: pointer;
+  }
+  
+  
+  button p{
+    color: #fff; 
+  }
+  
+  
+  span{
+    color:#000000; 
+  }
+  
+  
+  .aviso{
+    font-size: 15px;  
+    color: #000000;  
+  }
+  
+  
+  h1{
+    font-size: 50px;  
+    text-align: center; 
+    padding-bottom: 20px; 
+    color: #5b2206;
+  }
+  
+  
+  h3{
+    font-size: 25px; 
+    padding-bottom: 30px;
+    color: #0e0e0e;   
+  }
+  
+  
+  p{
+    font-size: 25px; 
+    color: #0e0e0e; 
+  }
+  
+  
+  ::-webkit-input-placeholder {
+   color: #a8a8a8;
+  }
+  
+  
+  ::-webkit-textarea-placeholder {
+   color: #a8a8a8;
+  }
+  
+  
+  .formulario input:focus{
+    outline:0;
+    border: 1px solid #5b2206;
+  }
+  
+  
+  .formulario textarea:focus{
+    outline:0;
+    border: 1px solid #5b2206;
+  }
+  
+
+.social-icons{
+    font-size: 40px;
+    color: #000000;
+}
+
+.footer{
+    background-color: #88bff6;
+    padding: 80px 0;
+    margin-top: -10px;
+
+}
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-links h4{
+
+    font-size: 20px;
+    color: #ff0000;
+    margin-bottom: 25px;
+    border-bottom: 2px solid#fff;
+    display: inline-block;
+    padding-bottom: 10px;
+    font-family: "Josefin Sans", sans-serif;
+
+}
+.footer-links ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3 ease;
+    font-family:"Josefin Sans", sans-serif ;
+}
+.footer-links ul li a:hover{
+    padding-left: 6px;
+    color: #ff0000;
+    font-family:"Josefin Sans", sans-serif;
+
+}
+
+.footer-copyrights h1{
+  font-size: 12px;
+  text-align: left;
+  
+}
